@@ -1,7 +1,174 @@
 ﻿@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<!-- Breadcrumbs -->
+<section class="breadcrumbs-custom-inset">
+    <div class="breadcrumbs-custom context-dark bg-overlay-46">
+        <div class="container">
+            <h2 class="breadcrumbs-custom-title">About Our Institute</h2>
+            <ul class="breadcrumbs-custom-path">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">About Us</li>
+            </ul>
+        </div>
+        <div class="box-position" style="background-image: url(/images/slider/Placement-01.png);"></div>
+    </div>
+</section>
+
+<!-- Why choose us-->
+<section class="section section-md section-first bg-default text-md-left">
+    <div class="container">
+        <div class="row row-50 justify-content-center">
+            <div class="col-md-10 col-lg-5 col-xl-6">
+                <img src="~/images/slider/02-01.jpg" alt="" width="519"
+                     height="446" />
+            </div>
+            <div class="col-md-10 col-lg-7 col-xl-6">
+                <h2>Why Choose Us</h2>
+                <!-- Bootstrap tabs-->
+                <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
+                    <!-- Nav tabs-->
+                    <ul class="nav nav-tabs">
+                        @foreach (var item in ViewBag.whyChooseUs)
+                        {
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#tabs-4-@item.ID"
+                                   data-toggle="tab">@item.Title</a>
+                            </li>
+                        }
+
+                    </ul>
+                    <!-- Tab panes-->
+                    <div class="tab-content">
+                        @foreach (var item in ViewBag.whyChooseUs)
+                        {
+                            <div class="tab-pane fade show active" id="tabs-4-@item.ID">
+                                <p>
+                                    @item.Description
+                                </p>
+                            </div>
+                        }
+
+                        <div class="group-md group-middle">
+                            <a class="button button-width-xl-230 button-primary button-pipaluk"
+                               href="#">Read more</a>
+                            <a class="button button-width-xl-310
+                               button-default-outline button-wapasha"
+                               href="/Home/Contact">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- History -->
+<section class="section section-md section-fluid bg-default">
+    <div class="container">
+        <h2>Our History</h2>
+    </div>
+    <!-- Owl Carousel-->
+    <div class="owl-carousel owl-classic owl-timeline" data-items="1" data-md-items="2" data-lg-items="3"
+         data-xl-items="4" data-margin="30" data-stage-padding="15" data-xxl-stage-padding="0" data-autoplay="true"
+         data-nav="true" data-dots="true">
+        @foreach (var item in ViewBag.History)
+        {
+            <div class="owl-item">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-md">
+                    <div class="thumbnail-mary-figure">
+                        <img src="~/images/slider/logo-wide.png" alt="" width="420"
+                             height="308" />
+                    </div>
+                    <div class="thumbnail-mary-caption">
+                        <a class="icon fl-bigmug-line-zoom60"
+                           href="/images/slider/logo-wide.png" data-lightgallery="item">
+                            <img src="~/images/slider/logo-wide.png" alt="" width="420" height="308" />
+                        </a>
+                    </div>
+                </article>
+                <div class="thumbnail-mary-description">
+                    <h5 class="thumbnail-mary-project"><a href="#">@item.History_Title</a></h5><span class="thumbnail-mary-decor"></span>
+                    <h5 class="thumbnail-mary-time">
+                        <time datetime="1999">@item.Since</time>
+                    </h5>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- What people say-->
+<section class="section context-dark">
+    <div class="parallax-container" data-parallax-img="/images/slider/c10.jpg">
+        <div class="parallax-content section-md bg-overlay-2-21">
+            <div class="container">
+                <div class="oh">
+                    <h2 class="wow slideInUp" data-wow-delay="0s">What People Say</h2>
+                </div>
+                <!-- Owl Carousel-->
+                <div class="owl-carousel owl-modern" data-items="1" data-stage-padding="15" data-margin="30"
+                     data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay="true">
+                    @foreach (var item in ViewBag.WhatPeopleSay)
+                    {
+                        <!-- Quote Lisa-->
+                        <article class="quote-lisa">
+                            <div class="quote-lisa-body">
+                                <a class="quote-lisa-figure" href="#">
+                                    <img class="img-circles"
+                                         src="~/images/user-16-100x100.jpg" alt="" width="100" height="100" />
+                                </a>
+                                <div class="quote-lisa-text">
+                                    <p class="q">
+                                        @item.Description
+                                    </p>
+                                </div>
+                                <h5 class="quote-lisa-cite"><a href="#">@item.Name</a></h5>
+                                <p class="quote-lisa-status">@item.Role</p>
+                            </div>
+                        </article>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- History -->
+<section class="section section-md section-fluid bg-default">
+    <div class="container">
+        <h2>Our Branches</h2>
+    </div>
+    <!-- Owl Carousel-->
+    <div class="owl-carousel owl-classic owl-timeline" data-items="1" data-md-items="2" data-lg-items="3"
+         data-xl-items="4" data-margin="30" data-stage-padding="15" data-xxl-stage-padding="0" data-autoplay="true"
+         data-nav="true" data-dots="true">
+        @foreach (var item in ViewBag.OtherBranches)
+        {
+            <div class="owl-item">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail thumbnail-mary thumbnail-md">
+                    <div class="thumbnail-mary-figure">
+                        <img src="~/images/slider/logo-wide.png" alt="" width="420"
+                             height="308" />
+                    </div>
+                    <div class="thumbnail-mary-caption">
+                        <a class="icon fl-bigmug-line-zoom60"
+                           href="/images/slider/logo-wide.png" data-lightgallery="item">
+                            <img src="~/images/slider/logo-wide.png" alt="" width="420" height="308" />
+                        </a>
+                    </div>
+                </article>
+                <div class="thumbnail-mary-description">
+                    <h5 class="thumbnail-mary-project"><a href="#">@item.Location</a></h5><span class="thumbnail-mary-decor"></span>
+                    <h5 class="thumbnail-mary-time">
+                        <time datetime="1999">@item.Telephone</time>
+                    </h5>
+                </div>
+            </div>
+        }
+    </div>
+</section>

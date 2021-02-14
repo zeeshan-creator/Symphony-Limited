@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SymphonyLimited.DbContext.Exam_Tbl>
+
+@{
+    ViewBag.Title = "exam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="my-3">Exams</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Exam
+        </th>
+        <th>
+            Exam Date
+        </th>
+        <th>
+            Faculty Name
+        </th>
+        <th>
+            Student Name
+        </th>
+        <th>Actions</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Exam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Exam_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Faculty_Tbl.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student_Tbl.Student_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Result", "searchwork",new { id = item.ID }) 
+        </td>
+    </tr>
+}
+
+</table>

@@ -17,18 +17,24 @@ namespace Symphony_Limited
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                        "~/Scripts/modernizr-*",
+                        "~/js/html5shiv.min.js",
+                        "~/js/pointer-events.min.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/js/core.min.js",
-                      "~/js/script.js"
+                      "~/js/script.js",
+                      "~/js/bootstrap-dropdownhover.min.js"
                       ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css",
+                      "~/css/bootstrap.css",
+                      "~/Content/site.css", 
                       "~/css/fonts.css",
+                      "~/css/animate.min.css",
+                      "~/css/bootstrap-dropdownhover.min.css",
                       "~/css/style.css"
                       ));
         }

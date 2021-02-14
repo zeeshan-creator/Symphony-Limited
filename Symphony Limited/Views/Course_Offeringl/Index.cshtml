@@ -1,0 +1,75 @@
+﻿@model IEnumerable<SymphonyLimited.DbContext.Course_Offering_Tbl>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Course offering</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Day)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sec_tion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course_Tbl.Course_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lab_Tbl.Lab)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester_Tbl_.Semester)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student_Tbl.Student_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Day)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sec_tion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Course_Tbl.Course_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lab_Tbl.Lab)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester_Tbl_.Semester)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student_Tbl.Student_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

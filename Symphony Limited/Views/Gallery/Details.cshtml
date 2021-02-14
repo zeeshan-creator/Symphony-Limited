@@ -1,0 +1,22 @@
+﻿@model SymphonyLimited.DbContext.Gallery_Tbl
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Gallery_Tbl</h4>
+    <hr />
+
+    <div class="text-center">
+        <img src="@Url.Content("~/images/Gallery/" + Model.Image + ".jpg")"
+             alt="" width="370" height="406" />
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

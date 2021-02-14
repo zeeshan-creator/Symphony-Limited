@@ -1,0 +1,48 @@
+﻿@model SymphonyLimited.DbContext.OurTeam_Tbl
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body style="color:grey;">
+    <div>
+        <h4>Our Team</h4>
+        <hr />
+        <div class="text-center">
+            <img src="@Url.Content("~/images/Profiles/_" + Model.Title + "_.jpg")"
+                 alt="" width="370" height="406" />
+        </div>
+
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Role)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Role)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary" }) |
+        @Html.ActionLink("Back to List", "Index", "ourteam", new { @class = "btn btn-primary" })
+    </p>
+</body>
+</html>

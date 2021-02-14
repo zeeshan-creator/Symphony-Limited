@@ -1,31 +1,213 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<!-- Swiper-->
+<section class="section swiper-container swiper-slider swiper-slider-modern" data-loop="true" data-autoplay="5000"
+         data-simulate-touch="true" data-nav="true" data-slide-effect="fade">
+    <div class="swiper-wrapper text-left">
+        <div class="swiper-slide context-dark" data-slide-bg="/images/slider/accpweb-1-01.jpg">
+            <div class="swiper-slide-caption">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-xxl-start">
+                        <div class="col-md-10 col-xxl-6">
+                            <div class="slider-modern-box">
+                                <h1 class="slider-modern-title"><span data-caption-animate="slideInDown" data-caption-delay="0" class="slideInDown animated">Eco-Friendly</span></h1>
+                                <p data-caption-animate="fadeInRight" data-caption-delay="400" class="fadeInRight animated">As the leading organic farm, we maintain an eco-friendly policy of growing and selling healthy food without any additives.</p>
+                                <div class="oh button-wrap"><a class="button button-primary button-ujarak slideInUp animated" href="#" data-caption-animate="slideInUp" data-caption-delay="400">Read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide context-dark" data-slide-bg="/images/slider/accpweb-1-01.jpg">
+            <div class="swiper-slide-caption">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-xxl-start">
+                        <div class="col-md-10 col-xxl-6">
+                            <div class="slider-modern-box">
+                                <h1 class="slider-modern-title">
+                                    <span data-caption-animate="slideInLeft"
+                                          data-caption-delay="0">Quality Control</span>
+                                </h1>
+                                <p data-caption-animate="fadeInRight" data-caption-delay="400">
+                                    We control the process of farming at
+                                    Herber to deliver the best organic products to our customers throughout the state.
+                                </p>
+                                <div class="oh button-wrap">
+                                    <a class="button button-primary button-ujarak" href="#"
+                                       data-caption-animate="slideInLeft" data-caption-delay="400">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <!-- Swiper Navigation-->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- Swiper Pagination-->
+    <div class="swiper-pagination swiper-pagination-style-2"></div>
+</section>
+
+<!-- Icons Ruby-->
+<section class="section section-md bg-default section-top-image">
+    <div class="container">
+        <div class="row row-30 justify-content-center">
+            <div class="col-sm-6 col-lg-4 wow fadeInRight" data-wow-delay="0s">
+                <article class="box-icon-ruby">
+                    <div class="unit box-icon-ruby-body flex-column flex-md-row text-md-left flex-lg-column align-items-center text-lg-center flex-xl-row text-xl-left">
+                        <div class="unit-left">
+                            <div class="box-icon-ruby-icon linearicons-shield-check"></div>
+                        </div>
+                        <div class="unit-body">
+                            <h4 class="box-icon-ruby-title"><a href="#">Trusted &amp; Verified</a></h4>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeInRight" data-wow-delay=".1s">
+                <article class="box-icon-ruby">
+                    <div class="unit box-icon-ruby-body flex-column flex-md-row text-md-left flex-lg-column align-items-center text-lg-center flex-xl-row text-xl-left">
+                        <div class="unit-left">
+                            <div class="box-icon-ruby-icon linearicons-gamepad"></div>
+                        </div>
+                        <div class="unit-body">
+                            <h4 class="box-icon-ruby-title"><a href="#">Best Equipment</a></h4>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeInRight" data-wow-delay=".2s">
+                <article class="box-icon-ruby">
+                    <div class="unit box-icon-ruby-body flex-column flex-md-row text-md-left flex-lg-column align-items-center text-lg-center flex-xl-row text-xl-left">
+                        <div class="unit-left">
+                            <div class="box-icon-ruby-icon linearicons-sun"></div>
+                        </div>
+                        <div class="unit-body">
+                            <h4 class="box-icon-ruby-title"><a href="#">Dedicated Team</a></h4>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+</section>
+
+<!-- Section CTA 2-->
+<section class="section text-center">
+    <div class="parallax-container" data-parallax-img="/images/slider/c10.jpg">
+        <div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-40">
+            <div class="container">
+                <h2 class="oh font-weight-normal">
+                    <span class="d-inline-block wow slideInDown" data-wow-delay="0s">
+                        Our
+                        Approach
+                    </span>
+                </h2>
+                <p class="oh big text-width-large">
+                    <span class="d-inline-block wow slideInUp" data-wow-delay=".2s">
+                        Our farm
+                        strictly combines the traditions of organic farming with the latest innovations to make our products
+                        healthy and safe for the clients.
+                    </span>
+                </p><a class="button button-primary button-icon button-icon-left button-ujarak wow fadeInUp"
+                       href="#" data-lightgallery="item" data-wow-delay=".1s">
+                    <span class="icon mdi mdi-play"></span>View presentation
+                </a>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+<!-- Team of professionals-->
+<section class="section section-md bg-default">
+    <div class="container">
+        <div class="oh">
+            <h2 class="wow slideInUp" data-wow-delay="0s">Our Team</h2>
+        </div>
+        <div class="row row-30 justify-content-center">
+            @foreach (var item in ViewBag.ourTeam)
+            {
+                <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay="0s">
+                    <!-- Team Classic-->
+                    <article class="team-classic">
+                        <a class="team-classic-figure" href="#">
+                            <img src="@Url.Content("~/images/Profiles/_" + item.Title + "_.jpg")"
+                                 alt="" width="370" height="406" />
+
+                        </a>
+                        <div class="team-classic-caption">
+                            <h5 class="team-classic-name"><a href="#">@item.Title</a></h5>
+                            <p class="team-classic-status">@item.Role</p>
+                        </div>
+                    </article>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- About us-->
+<section class="section">
+    <div class="parallax-container" data-parallax-img="/images/slider/c10.jpg">
+        <div class="parallax-content section-xl context-dark bg-overlay-68">
+            <div class="container">
+                <div class="row row-lg row-50 justify-content-center border-classic border-classic-big">
+                    @foreach (var item in ViewBag.Figure)
+                    {
+                        <div class="col-sm-6 col-md-5 col-lg-3 wow fadeInLeft" data-wow-delay="0s">
+                            <div class="counter-creative">
+                                <div class="counter-creative-number">
+                                    <span class="counter">@item.Figure</span><span class="icon counter-creative-icon fl-bigmug-line-trophy55"></span>
+                                </div>
+                                <h6 class="counter-creative-title">@item.Title</h6>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Improve your interior with deco-->
+<section class="section section-md bg-default section-top-image">
+    <div class="container">
+        <div class="oh h2-title">
+            <h2 class="wow slideInUp" data-wow-delay="0s">Our Gallery</h2>
+        </div>
+        <div class="row row-30" data-lightgallery="group">
+            @foreach (var item in ViewBag.Gallery)
+            {
+                <div class="col-sm-6 col-lg-4">
+                    <div class="oh-desktop">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInLeft" data-wow-delay="0s">
+                            <div class="thumbnail-mary-figure">
+                                <img src="@Url.Content("~/images/Gallery/"+item.Image+".jpg")" alt="" width="370"
+                                     height="303" />
+                            </div>
+                            <div class="thumbnail-mary-caption">
+                                <a class="icon fl-bigmug-line-zoom60"
+                                   href="@Url.Content("~/images/Gallery/"+item.Image+".jpg")" data-lightgallery="item">
+                                    <img src="@Url.Content("~/images/Gallery/"+item.Image+".jpg")" alt="" width="370" height="303" />
+                                </a>
+                                <h4 class="thumbnail-mary-title"><a href="#">Watermelons</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+

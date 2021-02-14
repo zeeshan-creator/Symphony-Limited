@@ -1,0 +1,54 @@
+﻿@model IEnumerable<SymphonyLimited.DbContext.Result_Tbl>
+
+@{
+    ViewBag.Title = "searchwork";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2 class="my-3">Result</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GPA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Grade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Exam_Tbl.Exam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student_Tbl.Student_Name)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GPA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Exam_Tbl.Exam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Tbl.Student_Name)
+            </td>
+
+        </tr>
+    }
+
+</table>

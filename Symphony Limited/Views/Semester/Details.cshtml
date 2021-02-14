@@ -1,0 +1,42 @@
+﻿@model SymphonyLimited.DbContext.Semester_Tbl_
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Semester_Tbl_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester_number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Desrcip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desrcip)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

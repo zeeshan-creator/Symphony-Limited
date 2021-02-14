@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d24a920324a943f59bcd42def4d8bd50" Name="Diagram1" ZoomLevel="79">
+        <EntityTypeShape EntityType="Model.About_Tbl" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Admin_Tbl" Width="1.5" PointX="5.75" PointY="7.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="Model.ContactForm_Tbl" Width="1.5" PointX="2.75" PointY="8.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="Model.ContactPage_Tbl" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Course_Offering_Tbl" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Course_Tbl" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Exam_Tbl" Width="1.5" PointX="6" PointY="4.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="Model.Faculty_Tbl" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FAQ_Tbl" Width="1.5" PointX="7.75" PointY="7.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="Model.Figure_Tbl" Width="1.5" PointX="9.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Gallery_Tbl" Width="1.5" PointX="4.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.History_Tbl" Width="1.5" PointX="9.75" PointY="7.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="Model.Lab_Tbl" Width="1.5" PointX="0.75" PointY="8" IsExpanded="false" />
+        <EntityTypeShape EntityType="Model.OtherBranches_Tbl" Width="1.5" PointX="6.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.OurTeam_Tbl" Width="1.5" PointX="8.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Result_Tbl" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Semester_Tbl_" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Student_Tbl" Width="1.5" PointX="0.875" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.WhatPeopleSay_Tbl" Width="1.5" PointX="10.75" PointY="4.875" IsExpanded="false" />
+        <AssociationConnector Association="Model.FK_Course_Offering_Tbl_Course_Tbl1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Course_Offering_Tbl_Lab_Tbl1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Course_Offering_Tbl_Semester_Tbl_" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Course_Offering_Tbl_Student_Tbl1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Faculty_Tbl_Course_Tbl" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Exam_Tbl_Faculty_Tbl" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Exam_Tbl_Student_Tbl" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Result_Tbl_Exam_Tbl" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Result_Tbl_Student_Tbl" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

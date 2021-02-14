@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymphonyLimited.Web", "Symphony Limited\SymphonyLimited.Web.csproj", "{3FE6DCA2-1DE6-4E90-A217-97D4C0660605}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymphonyLimited.Database", "SymphonyLimited.Database\SymphonyLimited.Database.csproj", "{515414DD-33F8-4A42-B10F-515DDD10B558}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymphonyLimited.DbContext", "SymphonyLimited.DbContext\SymphonyLimited.DbContext.csproj", "{A9504960-814C-4D1E-BADA-256B1891A5A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{3FE6DCA2-1DE6-4E90-A217-97D4C0660605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FE6DCA2-1DE6-4E90-A217-97D4C0660605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FE6DCA2-1DE6-4E90-A217-97D4C0660605}.Release|Any CPU.Build.0 = Release|Any CPU
-		{515414DD-33F8-4A42-B10F-515DDD10B558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{515414DD-33F8-4A42-B10F-515DDD10B558}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{515414DD-33F8-4A42-B10F-515DDD10B558}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{515414DD-33F8-4A42-B10F-515DDD10B558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9504960-814C-4D1E-BADA-256B1891A5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9504960-814C-4D1E-BADA-256B1891A5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9504960-814C-4D1E-BADA-256B1891A5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9504960-814C-4D1E-BADA-256B1891A5A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
